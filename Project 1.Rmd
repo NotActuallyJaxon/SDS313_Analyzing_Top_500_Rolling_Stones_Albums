@@ -21,23 +21,23 @@ library(ggplot2) #Using ggplot graphs for figures
 
 # **1. Introduction**
 
-## Analyzing the top 500 ranked albums according to the Rolling Stone in 2020. The dataset itself was collected by gathering ranked ballots from over 300 artists, critics, producers, and music industry figures.
+Analyzing the top 500 ranked albums according to the Rolling Stone in 2020. The dataset itself was collected by gathering ranked ballots from over 300 artists, critics, producers, and music industry figures.
 
-## The variables in the data set are as follows.
+The variables in the data set are as follows.
 
-##### **Artist-** The person or group that produced the music.
-##### **Album-** The collection of songs released together by the artist.
-##### **Release year-** When the album was released.
-##### **Genre-** The unique musical styles included in the album.
-##### **Type-** How the album was put together.
-##### **Weeks on billboard-** How many weeks the album was on the Hot 100 chart which is a ranked list of 100 popular songs and albums published each week.
-##### **Peak billboard position-** The most popular an album got in rankings.
-##### **Spotify popularity-** A complex calculation which involves number of plays, user engagement, skip rate, and share of total plays. The higher the score the more popular a song is interpreted to be.
-##### **Artist member count-** The number of individuals that make up the band or 1 if a single artist.
-##### **Rank 2020-** The aggregate rankings calculated from each judge's own ranked list of 50 albums.
-#### **(weighted billboards)** Weeks on billboard divided by peak billboard position.
+ **Artist-** The person or group that produced the music.
+ **Album-** The collection of songs released together by the artist.
+ **Release year-** When the album was released.
+ **Genre-** The unique musical styles included in the album.
+ **Type-** How the album was put together.
+ **Weeks on billboard-** How many weeks the album was on the Hot 100 chart which is a ranked list of 100 popular songs and albums published each week.
+ **Peak billboard position-** The most popular an album got in rankings.
+ **Spotify popularity-** A complex calculation which involves number of plays, user engagement, skip rate, and share of total plays. The higher the score the more popular a song is interpreted to be.
+ **Artist member count-** The number of individuals that make up the band or 1 if a single artist.
+ **Rank 2020-** The aggregate rankings calculated from each judge's own ranked list of 50 albums.
+ **(weighted billboards)** Weeks on billboard divided by peak billboard position.
 
-## For this analysis I will be focusing on Spotify popularity for the outcome variable of interest. For the predictors I will be investigating genre, weighted billboards, and their 2020 ranking.
+ For this analysis I will be focusing on Spotify popularity for the outcome variable of interest. For the predictors I will be investigating genre, weighted billboards, and their 2020 ranking.
 
 ![](2020Ranking.png)
 Rolling stone 2020 top 500 ranked albums, sourced from The Pudding Visual Essays link in conclusion.
@@ -139,9 +139,9 @@ Created a multivariate plot at the end of the bivariate section that desplayed t
 
 # **5. Conclusion**
 
-## In conclusion the Spotify popularity of albums is very weakly correlated to the 2020 rankings of albums by Rolling Stone. In addition Spotify popularity is moderately correlated with weighted billboards. Another interesting conclusion is that while genre plays some role in the Spotify popularity score distribution of the album it does not seem to have a major effect on the median popularity score relative to other genres.
+In conclusion the Spotify popularity of albums is very weakly correlated to the 2020 rankings of albums by Rolling Stone. In addition Spotify popularity is moderately correlated with weighted billboards. Another interesting conclusion is that while genre plays some role in the Spotify popularity score distribution of the album it does not seem to have a major effect on the median popularity score relative to other genres.
 
-## The fact that Spotify popularity which is supposed to broadly mirror which songs people like the most doesn't correlate much with the 2020 rankings is curious. In the future I suggest looking into the different variables involved in calculating Spotify popularity to dig into why the 2020 rankings don't reflect Spotify popularity scores or vice versa.
+The fact that Spotify popularity which is supposed to broadly mirror which songs people like the most doesn't correlate much with the 2020 rankings is curious. In the future I suggest looking into the different variables involved in calculating Spotify popularity to dig into why the 2020 rankings don't reflect Spotify popularity scores or vice versa.
 
 About that one Blues/Blues ROck album I excluded, I navigated to the spreadsheet that contains the data(link to google sheet at bottom of first source) and found this.
 ![](FoundIt.png)
